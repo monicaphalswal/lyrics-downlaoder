@@ -5,7 +5,7 @@
 ### Usage
 
 ```sh
-$ git clone https://github.com/monicaphalswal/lyrics-downlaoder.git
+$ git clone https://github.com/monicaphalswal/lyrics-downloader.git
 $ cd lyrics-downlaoder
 $ python lyrics.py "SONG NAME"
 ```
