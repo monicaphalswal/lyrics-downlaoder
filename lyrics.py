@@ -10,7 +10,7 @@ hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML,
        'Accept-Language': 'en-US,en;q=0.8',
        'Connection': 'keep-alive'}
 
-file_name = 'data/lyrics.json'
+file_name = 'lyrics.json'
 
 BASE_URL = 'https://www.google.com/search?'
 SEARCH_FILTER = '+site:https://www.musixmatch.com/'
@@ -82,9 +82,8 @@ def search_database(song_name):
 
 
 def get_lyrics(song_name):
-    path =os.path.dirname(os.path.realpath(__file__))+'/'+file_name
+    path =os.path.dirname(os.path.realpath(__file__))+"/"+file_name
     if not os.path.exists(path):
-        os.mkdir("data")
         data_iterable={}
         with open(file_name, "w") as json_file:
             for data in data_iterable:
@@ -116,3 +115,4 @@ args = parser.parse_args()
 
 if args.song_name:
   get_lyrics(args.song_name)
+
