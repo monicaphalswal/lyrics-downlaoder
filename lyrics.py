@@ -84,6 +84,7 @@ def search_database(song_name):
 def get_lyrics(song_name):
     path =os.path.dirname(os.path.realpath(__file__))+'/'+file_name
     if not os.path.exists(path):
+        os.mkdir("data")
         data_iterable={}
         with open(file_name, "w") as json_file:
             for data in data_iterable:
